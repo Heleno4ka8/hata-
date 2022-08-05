@@ -37,6 +37,9 @@ tr:hover td {
   margin: 0; 
   font-family: Arial;
 }
+.shadow {
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -235,6 +238,7 @@ a.in {
   color: #24242b;
   font-weight: 700;
   font-family: "Roboto Slab";
+  margin: 10px 0;
 }
 .main h2 {
   color: #24242b;
@@ -268,7 +272,6 @@ h3:hover {
 .houses {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
 }
 .houses p {
   font-size: 13px;
