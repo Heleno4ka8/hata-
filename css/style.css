@@ -8,10 +8,14 @@
 }
 sup {
   font-size: 0.6em;
+}
+table {
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
 } 
 th, 
 td {
-  border-bottom: 1px solid #cdcddd;
   padding: 0 22px;
   height: 40px;
 }
@@ -21,13 +25,21 @@ th {
   font-size: 14px;
   font-weight: 700;
   font-family: "Roboto Slab";
+  text-align: left;
+}
+th:last-child {
+  text-align: right;
 } 
 td {
   font-size: 14px;
   color: #666;
   font-family: "Arial";
   background-color: #e4e4ec;
+  border-top: 1px solid #cdcddd;
 } 
+td:last-child {
+  text-align: right;
+}
 tr:hover td {
   background-color: #fd8300;
   color: #fff;
@@ -108,7 +120,7 @@ a.in {
   width: 19px;
 }
 .reference {
-  padding: 15px 0;
+  padding: 25px 0;
 }
 .reference .block {
   align-items: center;
