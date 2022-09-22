@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Будівельна компанія Хата плюс - Заміські будинки, котеджі під ключ</title>
 </head>
+
 <body class="body">
-  <div class="header">
+  <header class="header">
     <div class="top_menu">
-      <div class="wrapper block">
+      <nav class="wrapper block">
         <ul class="menu">
           <li>
             <a href="#">Головна</a>
@@ -19,7 +21,7 @@
             <a href="#">Про компанію</a>
           </li>
           <li>
-            <a href="#">Наші будівлі</a>
+            <a href="hata_price.html">Наші будівлі</a>
           </li>
           <li>
             <a href="#">Акції</a>
@@ -33,12 +35,15 @@
           <li><a href="#" class="tw"></a></li>
           <li><a href="#" class="in"></a></li>
         </ul>
-      </div>
+      </nav>
     </div>
     <div class="reference">
       <div class="wrapper block">
-        <img class="logo" src="img/logo.png" alt="logotype">
-        <div class="phone">
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+            <img class="logo" src="img/logo.png" alt="logotype_hata_plus">
+        </picture>
+        <div class="phone stick">
           <p>
             <a class="tube" href="tel:+380971002525">+38(097) 100-25-25</a>
           </p>
@@ -59,17 +64,17 @@
         </a>
       </div>
     </div>
-  </div>
+  </header>
   <div class="picture">
     <div class="wrapper">
       <p class="picture_name">Пропозиція місяця</p>
       <p class="picture_advice">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-      <p class="picture_price">5999 грн / м<sup>2</sup></p>
+      <p class="picture_price"><span>5999</span> грн / м<sup>2</sup></p>
     </div>
   </div>
   <div class="wrapper block block_top">
-    <div class="main">
-      <div class="text">
+    <main class="main">
+      <section class="text">
         <h1>Компанія “Хата Плюс”</h1>
         <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в гармонії з
           природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала справжньою віддушиною
@@ -79,34 +84,51 @@
           можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити альтанку і барбекю.
         </p>
         <p><a href="#">Детальніше про нас</a></p>
-      </div>
+      </section>
       <hr>
-      <h2>Популярні проекти</h2>
-      <div class="houses">
-        <div>
-          <img src="img/edmonton.jpg" alt="Будинок EDMONTON">
-          <h3>EDMONTON (338 м<sup>2</sup>)</h3>
-          <p>Загальна площа будови: 312 м<sup>2</sup></p>
-          <p>Кількість спалень: 4</p>
-          <p>Гараж: 2 авто</p>
+      <section>
+        <h2>Популярні проекти</h2>
+        <div class="houses">
+          <figure>
+            <figcaption
+            ><picture>
+              <source srcset="img/edmonton.webp" type="image/webp">
+                <img src="img/edmonton.jpg" alt="Будинок Едмонтон">
+            </picture>
+              <h3>EDMONTON (338 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 312 м<sup>2</sup></p>
+              <p>Кількість спалень: 4</p>
+              <p>Гараж: 2 авто</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <figcaption>
+              <picture>
+                <source srcset="img/montreal.webp" type="image/webp">
+                <img src="img/montreal.jpg" alt="Будинок Монреаль">
+              </picture>
+              <h3>MONTREAL (332 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 290 м<sup>2</sup></p>
+              <p>Кількість спалень: 3</p>
+              <p>Гараж: 2 авто</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <figcaption>
+              <picture>
+                <source srcset="img/calgary.webp" type="image/webp">
+                <img src="img/calgary.jpg"alt="Будинок Калгарі">
+              </picture>
+              <h3>CALGARY (294 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 272 м<sup>2</sup></p>
+              <p>Кількість спалень: 3</p>
+              <p>Гараж: 2 авто</p>
+            </figcaption>
+          </figure>
         </div>
-        <div>
-          <img src="img/montreal.jpg" alt="Заміський котедж MONTREAL">
-          <h3>MONTREAL (332 м<sup>2</sup>)</h3>
-          <p>Загальна площа будови: 290 м<sup>2</sup></p>
-          <p>Кількість спалень: 3</p>
-          <p>Гараж: 2 авто</p>
-        </div>
-        <div>
-          <img src="img/calgary.jpg" alt="Котедж CALGARY під ключ">
-          <h3>CALGARY (294 м<sup>2</sup>)</h3>
-          <p>Загальна площа будови: 272 м<sup>2</sup></p>
-          <p>Кількість спалень: 3</p>
-          <p>Гараж: 2 авто</p>
-        </div>
-      </div>
-    </div>
-    <div class="list">
+      </section>
+    </main>
+    <aside class="list">
       <p>Категорії проектів</p>
       <ul>
         <li>
@@ -139,9 +161,9 @@
           <a href="#">Готові будинки</a>
         </li>
       </ul>
-    </div>
+    </aside>
   </div>
-  <div class="footer">
+  <footer class="footer">
     <div class="footer-top">
       <div class="wrapper block">
         <ul class="column">
@@ -192,6 +214,7 @@
         <p>© Будівельна компанія “Хата Плюс” 2018.</p>
       </div>
     </div>
-  </div>
+  </footer>
 </body>
+
 </html>
