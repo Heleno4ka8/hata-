@@ -50,7 +50,7 @@ tr:hover td {
   font-family: Arial;
 }
 .shadow {
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 .wrapper {
   max-width: 960px;
