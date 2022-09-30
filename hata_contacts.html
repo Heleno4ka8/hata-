@@ -94,27 +94,28 @@
         <hr>
         <div class="maps">
             <div>
-                <iframe class="iframe" src="https://www.google.com/maps/d/embed?mid=1fSvB0Xeqsao2cfKIDyQm8ImntDU4qe0&ehbc=2E312F"></iframe>
+                <iframe class="iframe"
+                    src="https://www.google.com/maps/d/embed?mid=1fSvB0Xeqsao2cfKIDyQm8ImntDU4qe0&ehbc=2E312F"></iframe>
             </div>
             <section>
                 <div class="forma">
                     <h2>Форма зворотнього зв’язку</h2>
                     <form action="php/sendmail.php" method="post">
                         <div class="topforma">
-                            <label>
-                                <input class="yourname" type="text" placeholder="Ваше ім’я">
+                            <label class="textname label">
+                                <input class="yourname input" type="text" placeholder="Ваше ім’я">
                             </label>
-                            <label>
-                                <input class="yourphone" type="text" placeholder="Телефон">
+                            <label class="textphone  label">
+                                <input class="yourphone input" type="text" placeholder="Телефон">
                             </label>
                         </div>
-                        <p>
-                            <label>
-                                <input class="teamtext" type="text" placeholder="Тема повідомлення">
+                        <p class="paragraf-label">
+                            <label class="label">
+                                <input class="teamtext input" type="text" placeholder="Тема повідомлення">
                             </label>
-                            <label>
                         </p>
-                            <input class="textcontent" type="text" placeholder="Текст">
+                        <label class="label">
+                            <textarea class="textcontent input" placeholder="Текст"></textarea>
                         </label>
                         <div class="formfooter">
                             <p>
@@ -122,12 +123,13 @@
                                     <input class="button" type="submit">
                                 </label>
                                 <label>
-                                    <input class="square" type="checkbox"><p class="getpost">Я бажаю отримувати останні новини</p>
+                                    <input class="square" type="checkbox">
+                                    <p class="getpost">Я бажаю отримувати останні новини</p>
                                 </label>
                             </p>
                         </div>
                     </form>
-                </div> 
+                </div>
             </section>
         </div>
     </main>
