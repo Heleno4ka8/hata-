@@ -46,6 +46,8 @@ p {
     display: flex;
     justify-content: space-between;
     column-gap: 25px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 .iframe {
     width: 465px;
