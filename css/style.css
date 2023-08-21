@@ -19,8 +19,7 @@ table {
 } 
 th, 
 td {
-  padding: 0 22px;
-  height: 40px;
+  padding: 10px 20px;
 }
 th {
   background-color: #1f1f56;
@@ -52,6 +51,9 @@ ul {
   margin: 0;
   list-style: none;
 } 
+textarea {
+  resize: vertical;
+}
 .body {
   background-color: white; 
   margin: 0; 
@@ -81,7 +83,7 @@ box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 .top_menu .block {
   justify-content: space-between;
-}
+} 
 .menu li {
   margin-right: 28px; 
   display: inline-block;
@@ -214,9 +216,16 @@ a.in {
   display: block;
   padding: 15px 27px;
   text-decoration: none;
+  text-align: center;
 } 
 .call:hover {
   color: #fd8300;
+}
+.table_wrap {
+  overflow-x: scroll;
+}
+.th {
+  width: 20%;
 }
 .picture {
   background-image: url(../img/background.jpg);
@@ -250,7 +259,6 @@ a.in {
   margin: 10px 0;
 }
 .block_main {
-  /* align-items: flex-start; */
   padding: 35px 0 40px;
 }
 .main {
@@ -298,8 +306,8 @@ h3:hover {
 .houses {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   column-gap: 28px;
+  row-gap: 20px;
 }
 .houses p {
   font-size: 13px;
@@ -307,7 +315,7 @@ h3:hover {
   margin: 0
 }
 .houses h2 {
-  display: block;
+  font-size: 24px;
 }
 .houses h3 {
   color: #1f1f56;
@@ -381,6 +389,111 @@ h3:hover {
 .style a:hover {
   color: #666;
   background-color: #cecedd;
+}
+.contacts h2 {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #24242b;
+  font-weight: 700;
+  font-family: "Roboto Slab";
+}
+.contacts a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.contacts p {
+  font-size: 14px;
+  font-family: "Arial";
+  color: #666666;
+}
+.data {
+  display: flex;
+  column-gap: 15px;
+  justify-content: space-between;
+}
+.tel {
+  color: #25252c;
+  font-weight: bold;
+  font-size: 18px;
+}
+.recvisit {
+  margin-bottom: 20px;
+}
+.mail {
+  text-decoration: underline;
+  color: #25252c;
+  font-size: 16px;
+}
+.maps {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.map {
+  width: 100%;
+  height: 300px;
+}
+.input {
+  border-radius: 3px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.forma_wrap {
+  width: 100%;
+}
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.label {
+  width: 100%;
+}
+.input  {
+  padding: 10px 15px;
+  font-size: 13px;
+  color: #9999a6;
+  font-style: italic;
+  width: 100%;
+  border: 1px solid #c4c4d3;
+  box-sizing: border-box;
+}
+.topforma {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+.textcontent {
+  min-height: 100px;
+  max-height: 200px;
+}
+.paragraf-label {
+  margin: 12px 0;
+}
+.formfooter {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.button {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color:#fff;
+  width: 140px;
+  height: 41px;
+  border: 1px solid #fd8300;
+  border-radius: 21px;
+  background-color: #fd8300;
+}
+.square {
+  margin-left: 25px;
+}
+.getpost {
+  font-size: 13px;
+  color: #666666;
 }
 .footer {
   background-color: #ededf5;
@@ -468,16 +581,23 @@ a.envelope {
 }
 @media screen and (max-width: 990px) {
   .header .block,
-  .footer .block {
+  .footer .block,
+  .formfooter,
+  .houses,
+  .maps {
     flex-wrap: wrap;
   }
-  h2 {
-    text-align: center;
+  .contacts h2 {
+    margin: 25px 0 15px;
   }
+  .figures h2 {
+    text-align: center;
+  } 
   .footer {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 897px) {
   .block {
     justify-content: center;
@@ -494,8 +614,33 @@ a.envelope {
   .menu {
     display: none;
   }
+  .active_line_menu {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 38px;
+    background-color: #e4e4ec;
+    border-radius: 3px;
+  }
+  .active_line_menu li {
+    display: block;
+    margin: 0;
+  }
+  .active_line_menu li+li {
+    border-top:  1px solid #cdcddd;
+  }
+  .active_line_menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+  }
+  .top_menu .block {
+    position: relative;
+  }
   .line_menu {
     display: inline-block;
+    cursor: pointer;
   }
   .line_menu span {
     display: inline-block;
@@ -519,8 +664,58 @@ a.envelope {
   .line_menu span::after {
     top: 10px;
   }
+  .line_menu_open span {
+    background-color: transparent;
+  }
+  .line_menu_open span::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+  .line_menu_open span::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  th,td {
+    padding: 10px;
+  }
+  .order {
+    min-width: 542px;
+  }
   .houses {
     justify-content: center;
-    row-gap: 20px;
+  }
+  .data {
+    flex-wrap: wrap;
+  }
+  .maps {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 705px) {
+  .data {
+    justify-content: center;
+    text-align: center;
+  }
+  .infa h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 571px) {
+  .table_wrap::-webkit-scrollbar {
+    height: 9px;
+    background-color: #ccc;
+  } 
+  .table_wrap::-webkit-scrollbar-thumb {
+    background-color: #1f1f56;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .formfooter {
+    flex-direction: column-reverse;
+  }
+  .getpost {
+    margin-bottom: 20px;
   }
 }

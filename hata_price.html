@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
   <title>Будівельна компанія "Хата Плюс" пропонує продаж котеджів та будинків</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <header class="header shadow">
     <div class="top_menu">
       <nav class="wrapper block">
+        <div class="line_menu">
+          <span></span>
+        </div>
         <ul class="menu">
           <li>
             <a href="index.html">Головна</a>
@@ -39,156 +42,162 @@
     </div>
     <div class="reference">
       <div class="wrapper block">
-        <picture>
+        <picture class="column">
           <source srcset="img/logo.webp" type="image/webp">
-          <img class="logo" src="img/logo.png" alt="logotype_hata_plus">
+            <img class="logo" src="img/logo.png" alt="logotype_hata_plus">
         </picture>
-        <div class="phone">
+        <div class="phone stick column">
           <p>
-            <a class="tube" href="tel:+38(097) 100-25-25">+38(097) 100-25-25</a>
+            <a class="tube" href="tel:+380971002525">+38(097) 100-25-25</a>
           </p>
           <p>
-            <a href="tel:38(097) 100-25-25">+38(097) 100-25-25</a>
+            <a href="tel:+380971002525">+38(097) 100-25-25</a>
           </p>
         </div>
-        <div class="mail">
+        <div class="mail column">
           <p>
             <a class="letter" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
           </p>
           <p>
-            <a class="plus" href="#">hataplus</a>
+            <a class="plus" href="skype:hataplus">hataplus</a>
           </p>
         </div>
-        <a class="call" href="#">Замовити дзвінок</a>
+        <a class="call column">
+          Замовити дзвінок
+        </a>
       </div>
     </div>
   </header>
-  <main class="wrapper main block_top">
-    <section>
-      <h1>Ціни на послуги тимчасового проживання</h1>
-      <p>Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, Wi-Fi-зоною.
-        Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного
-        номера.</p>
-      <table class="order">
-        <thead>
-          <tr>
-            <th>Назва котеджу</th>
-            <th>Загальна площа м.кв.</th>
-            <th>Кількість кімнат</th>
-            <th>Гараж</th>
-            <th>Ціна</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table">
-            <td>Hamilton Paradise</td>
-            <td>392</td>
-            <td>5</td>
-            <td>2</td>
-            <td>45 000 $</td>
-          </tr>
-          <tr>
-            <td>Montreal Hourse House</td>
-            <td>295</td>
-            <td>3</td>
-            <td>1</td>
-            <td>29 750 $</td>
-          </tr>
-          <tr>
-            <td>Edmenton</td>
-            <td>338</td>
-            <td>2</td>
-            <td>2</td>
-            <td>53 200 $</td>
-          </tr>
-          <tr>
-            <td>Calgary Skyliner</td>
-            <td>249</td>
-            <td>2</td>
-            <td>1</td>
-            <td>31 000 $</td>
-          </tr>
-          <tr>
-            <td>Quebec Enterprices</td>
-            <td>392</td>
-            <td>4</td>
-            <td>2</td>
-            <td>110 000 $</td>
-          </tr>
-          <tr>
-            <td>Alberta Maria</td>
-            <td>349</td>
-            <td>1</td>
-            <td>3</td>
-            <td>67 500 $</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="text">
-        <p>Час заселення з 14-00, виїзд до 12-00.<br>
-          Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
-        <p><a href="#">Ознайомитись з правилами проживання</a></p>
-      </div>
-    </section>
-    <hr>
-    <section>
-      <h2>Популярні проекти</h2>
-      <div class="houses">
-        <figure>
-          <figcaption>
-            <picture>
+  <div class="wrapper">
+    <main class="main block_main">
+      <section>
+        <h1>Ціни на послуги тимчасового проживання</h1>
+        <p>Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, Wi-Fi-зоною.
+          Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного
+          номера.</p>
+        <div class="table_wrap">
+          <table class="order">
+            <thead>
+              <tr>
+                <th>Назва котеджу</th>
+                <th class="th">Загальна площа м.кв.</th>
+                <th class="th">Кількість кімнат</th>
+                <th>Гараж</th>
+                <th>Ціна</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table">
+                <td>Hamilton Paradise</td>
+                <td>392</td>
+                <td>5</td>
+                <td>2</td>
+                <td>45 000 $</td>
+              </tr>
+              <tr>
+                <td>Montreal Hourse House</td>
+                <td>295</td>
+                <td>3</td>
+                <td>1</td>
+                <td>29 750 $</td>
+              </tr>
+              <tr>
+                <td>Edmenton</td>
+                <td>338</td>
+                <td>2</td>
+                <td>2</td>
+                <td>53 200 $</td>
+              </tr>
+              <tr>
+                <td>Calgary Skyliner</td>
+                <td>249</td>
+                <td>2</td>
+                <td>1</td>
+                <td>31 000 $</td>
+              </tr>
+              <tr>
+                <td>Quebec Enterprices</td>
+                <td>392</td>
+                <td>4</td>
+                <td>2</td>
+                <td>110 000 $</td>
+              </tr>
+              <tr>
+                <td>Alberta Maria</td>
+                <td>349</td>
+                <td>1</td>
+                <td>3</td>
+                <td>67 500 $</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text">
+          <p>Час заселення з 14-00, виїзд до 12-00.<br>
+            Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
+          <p><a href="#">Ознайомитись з правилами проживання</a></p>
+        </div>
+      </section>
+      <hr>
+      <section class="figures">
+        <h2>Популярні проекти</h2>
+        <div class="houses">
+          <figure class="column">
+            <figcaption
+            ><picture>
               <source srcset="img/edmonton.webp" type="image/webp">
-              <img src="img/edmonton.jpg" alt="Будинок Едмонтон">
+                <img src="img/edmonton.jpg" alt="Будинок Едмонтон">
             </picture>
-            <h3>EDMONTON (338 м<sup>2</sup>)</h3>
-            <p>Загальна площа будови: 312 м<sup>2</sup></p>
-            <p>Кількість спалень: 4</p>
-            <p>Гараж: 2 авто</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <figcaption>
-            <picture>
-              <source srcset="img/montreal.webp" type="image/webp">
-              <img src="img/montreal.jpg" alt="Будинок Монреаль">
-            </picture>
-            <h3>MONTREAL (332 м<sup>2</sup>)</h3>
-            <p>Загальна площа будови: 290 м<sup>2</sup></p>
-            <p>Кількість спалень: 3</p>
-            <p>Гараж: 2 авто</p>
-          </figcaption>
-        </figure>
-        <figure>
-          <figcaptian>
-            <picture>
-              <source srcset="img/calgary.webp" type="image/webp">
-              <img src="img/calgary.jpg" alt="Будинок Калґарі">
-            </picture>
-            <h3>CALGARY (294 м<sup>2</sup>)</h3>
-            <p>Загальна площа будови: 272 м<sup>2</sup></p>
-            <p>Кількість спалень: 3</p>
-            <p>Гараж: 2 авто</p>
-          </figcaptian>
-        </figure>
-        <figure>
-          <figcartion>
-            <picture>
-              <source srcset="img/richmond.webp" type="image/webp">
-              <img src="img/richmond.jpg" alt="Будинок Раймонд">
-            </picture>
-            <h3>RICHMOND (324 м<sup>2</sup>)</h3>
-            <p>Загальна площа будови: 242 м<sup>2</sup></p>
-            <p>Кількість спалень: 3</p>
-            <p>Гараж: 3 авто</p>
-          </figcartion>
-        </figure>
-      </div>
-    </section>
-  </main>
+              <h3>EDMONTON (338 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 312 м<sup>2</sup></p>
+              <p>Кількість спалень: 4</p>
+              <p>Гараж: 2 авто</p>
+            </figcaption>
+          </figure>
+          <figure class="column">
+            <figcaption>
+              <picture>
+                <source srcset="img/montreal.webp" type="image/webp">
+                <img src="img/montreal.jpg" alt="Будинок Монреаль">
+              </picture>
+              <h3>MONTREAL (332 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 290 м<sup>2</sup></p>
+              <p>Кількість спалень: 3</p>
+              <p>Гараж: 2 авто</p>
+            </figcaption>
+          </figure>
+          <figure class="column">
+            <figcaption>
+              <picture>
+                <source srcset="img/calgary.webp" type="image/webp">
+                <img src="img/calgary.jpg"alt="Будинок Калгарі">
+              </picture>
+              <h3>CALGARY (294 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 272 м<sup>2</sup></p>
+              <p>Кількість спалень: 3</p>
+              <p>Гараж: 2 авто</p>
+            </figcaption>
+          </figure>
+          <figure class="column">
+            <figcaption>
+              <picture>
+                <source srcset="img/richmond.webp" type="image/webp">
+                <img src="img/richmond.jpg" alt="Будинок Раймонд">
+              </picture>
+              <h3>RICHMOND (324 м<sup>2</sup>)</h3>
+              <p>Загальна площа будови: 242 м<sup>2</sup></p>
+              <p>Кількість спалень: 3</p>
+              <p>Гараж: 3 авто</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
   <footer class="footer">
     <div class="footer-top">
       <div class="wrapper block">
-        <ul class="column">
+        <ul class="column footer-menu">
           <li>
             <a href="#">Будинки</a>
           </li>
@@ -202,7 +211,7 @@
             <a href="#">Новини</a>
           </li>
         </ul>
-        <ul class="column">
+        <ul class="column footer-menu">
           <li>
             <a href="#">Про компанію</a>
           </li>
@@ -210,32 +219,33 @@
             <a href="#">Страхування</a>
           </li>
           <li>
-            <a href="hata_contacts.html">Контакти</a>
+            <a href="#">Контакти</a>
           </li>
         </ul>
-        <div class="phone">
+        <div class="phone column">
           <p>
-            <a class="tube" href="tel:+38(097) 100-25-25">+38(097) 100-25-25</a>
+            <a class="tube" href="tel:+380971002525">+38(097) 100-25-25</a>
           </p>
           <p>
-            <a href="tel:+38(097) 100-25-25">+38(097) 100-25-25</a>
+            <a href="tel:+380971002525">+38(097) 100-25-25</a>
           </p>
         </div>
-        <div class="mail">
+        <div class="mail column">
           <p>
             <a class="letter" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
           </p>
           <p>
-            <a class="plus" href="#">hataplus</a>
+            <a class="plus" href="skype:hataplus">hataplus</a>
           </p>
         </div>
       </div>
     </div>
     <div class="copy">
       <div class="wrapper bottom">
-        <p>© Будівельна компанія “Хата Плюс” 2018.</p>
+        <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
       </div>
     </div>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
